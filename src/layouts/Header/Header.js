@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="container-fluid">
-      <div className="row">
+      <div className="row header">
         <div className="col-2">
           <img src="/assets/logo.svg" alt="CORKOWL" />
         </div>
