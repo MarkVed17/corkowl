@@ -1,0 +1,49 @@
+.row {
+  background-color: var(--primary-red);
+  padding: 0.75rem 1.5rem;
+}
+
+.search-box {
+  height: 2rem;
+  width: 22rem;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: var(--subtle-text-color);
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--subtle-text-color);
+}
+
+::placeholder {
+  color: var(--subtle-text-color);
+}
+
+.avatar-group {
+  display: flex;
+  gap: 2.25rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.avatar-wrapper {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.username {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+input:focus {
+  outline: none;
+}
