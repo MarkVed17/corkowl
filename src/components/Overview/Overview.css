@@ -1,0 +1,83 @@
+.overview-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overview-top__heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--subtle-text-color);
+}
+
+.secondary-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--light-state-color);
+  background-color: var(--secondary-red);
+  padding: 0.75rem 1.1875rem;
+  border-radius: 4px;
+}
+
+.secondary-button:hover {
+  background-color: var(--primary-red);
+}
+
+.orders-wrapper {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.orders-status-container {
+  justify-content: space-between;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.order-status-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 0;
+  padding: 1rem;
+  width: 18.125rem;
+  height: 5.5rem;
+}
+
+.border-yellow {
+  box-shadow: 0px -2px 0px var(--yellow-border),
+    0px 2px 11px rgba(0, 0, 0, 0.06);
+}
+
+.border-blue {
+  box-shadow: 0px -2px 0px var(--blue-border), 0px 2px 11px rgba(0, 0, 0, 0.06);
+}
+
+.border-green {
+  box-shadow: 0px -2px 0px var(--green-border), 0px 2px 11px rgba(0, 0, 0, 0.06);
+}
+
+.border-red {
+  box-shadow: 0px -2px 0px var(--red-border), 0px 2px 11px rgba(0, 0, 0, 0.06);
+}
+
+.order-status-box__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-status-box__title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+  color: var(--subtle-text-color);
+}
+
+.order-status-box__count {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+}
