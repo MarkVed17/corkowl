@@ -1,7 +1,6 @@
 import React from "react";
 import MaterialReactTable from "material-react-table";
 import { Box, Typography } from "@mui/material";
-import "./InventoryTable.css";
 
 const InventoryTable = () => {
   const data = [
