@@ -13,16 +13,22 @@ const Sidebar = () => {
 
   return (
     <aside className="sidebar">
-      {sidebarLinks.map(({ url, icon, name }) => (
-        <a
-          key={name}
-          href={url} // href just for static page but would be a React Router <NavLink> after adding react-router
-          className={url === "/" ? "sidebar-link-active" : "sidebar-link"}
-        >
-          <img src={icon} alt={name} />
-          <p>{name}</p>
-        </a>
-      ))}
+      <nav>
+        {sidebarLinks.map(({ url, icon, name }) => (
+          <a
+            key={name}
+            href={url} // href just for static page but would be a React Router <NavLink> after adding react-router
+            className={url === "/" ? "sidebar-link-active" : "sidebar-link"}
+          >
+            <img src={icon} alt={name} />
+            <p>{name}</p>
+          </a>
+        ))}
+      </nav>
+      <footer className="footer">
+        <img src="/assets/footer-logo.svg" alt="logo" />
+        <p className="footer-copyright">© 2020 CorkOwl, All Rights Reserved.</p>
+      </footer>
     </aside>
   );
 };
