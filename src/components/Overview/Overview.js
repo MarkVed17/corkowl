@@ -122,7 +122,8 @@ const Overview = () => {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row table-container">
+          <p className="table-container__heading">Inventory</p>
           <InventoryTable />
         </div>
       </div>

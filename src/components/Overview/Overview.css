@@ -239,3 +239,12 @@
   font-weight: 700;
   font-size: 2rem;
 }
+
+.table-container {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.table-container__heading {
+  font-weight: 700;
+}
