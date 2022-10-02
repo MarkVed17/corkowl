@@ -1,4 +1,5 @@
 import React from "react";
+import { InventoryTable } from "../InventoryTable/InventoryTable";
 import "./Overview.css";
 
 const Overview = () => {
@@ -48,7 +49,7 @@ const Overview = () => {
       <div className="container-fluid orders-wrapper">
         <div className="row orders-status-container">
           {ordersStatus.map(({ title, icon, count }) => (
-            <div className={returnBorder(title)}>
+            <div key={title} className={returnBorder(title)}>
               <div className="order-status-box__top">
                 <p className="order-status-box__title">{title}</p>
                 <img src={icon} alt={title} />
@@ -56,6 +57,9 @@ const Overview = () => {
               <p className="order-status-box__count">{count}</p>
             </div>
           ))}
+        </div>
+        <div className="row">
+          <InventoryTable />
         </div>
       </div>
     </div>
