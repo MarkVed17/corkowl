@@ -15,6 +15,7 @@ const Sidebar = () => {
     <aside className="sidebar">
       {sidebarLinks.map(({ url, icon, name }) => (
         <a
+          key={name}
           href={url} // href just for static page but would be a React Router <NavLink> after adding react-router
           className={url === "/" ? "sidebar-link-active" : "sidebar-link"}
         >
