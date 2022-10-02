@@ -28,4 +28,6 @@ button {
   --active-link-color: #f7f1f3;
   --link-text-color: #485572;
   --light-state-color: #fafcfe;
+  --success-color: #2FCA72;
+  --grey-text-color: #868686;
 }
